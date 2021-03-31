@@ -25,9 +25,10 @@ public class ItemController {
         if(itemRepository.existsByItemName(itemname)){
             throw new ValidationException("Item already exists");
         }
-        Double itemprice = body.get(item.getItemPrice());
+        //Double itemprice = body.get(item.getItemPrice());
 
         String discountpercentage = body.get("discountpercentage");
 
+        return null;
     }
 }
